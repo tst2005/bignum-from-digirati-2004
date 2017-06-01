@@ -30,8 +30,48 @@
 
 --%%%%%%%%        Start of Code        %%%%%%%%--
 
+local BigNum
 BigNum = {} ;
 BigNum.mt = {} ;
+
+--[=[
+--printraw{{{2
+function printraw( bnum )
+   local i = 0 ;
+   if bnum == nil then
+      error( "Function printraw: parameter nil" ) ;
+   end
+   while 1 == 1 do
+      if bnum[i] == nil then
+         io.write( ' len '..bnum.len ) ;
+         if i ~= bnum.len then
+            io.write( ' ERRO!!!!!!!!' ) ;
+         end
+         io.write( "\n" ) ;
+         return 0 ;
+      end
+      io.write( 'r'..bnum[i] ) ;
+      i = i + 1 ;
+   end
+end
+]=]--
+
+--max{{{2
+local function max( int1 , int2 )
+   if int1 > int2 then
+      return int1 ;
+   else
+      return int2 ;
+   end
+end
+
+--decr{{{2
+local function decr( bnum1 )
+   local temp = {} ;
+   temp = BigNum.new( "1" ) ;
+   BigNum.sub( bnum1 , temp , bnum1 ) ;
+   return 0 ;
+end
 
 
 --BigNum.new{{{1
@@ -946,38 +986,4 @@ function BigNum.put( bnum , int , pos )
    return 0 ;
 end
 
---printraw{{{2
-function printraw( bnum )
-   local i = 0 ;
-   if bnum == nil then
-      error( "Function printraw: parameter nil" ) ;
-   end
-   while 1 == 1 do
-      if bnum[i] == nil then
-         io.write( ' len '..bnum.len ) ;
-         if i ~= bnum.len then
-            io.write( ' ERRO!!!!!!!!' ) ;
-         end
-         io.write( "\n" ) ;
-         return 0 ;
-      end
-      io.write( 'r'..bnum[i] ) ;
-      i = i + 1 ;
-   end
-end
---max{{{2
-function max( int1 , int2 )
-   if int1 > int2 then
-      return int1 ;
-   else
-      return int2 ;
-   end
-end
-
---decr{{{2
-function decr( bnum1 )
-   local temp = {} ;
-   temp = BigNum.new( "1" ) ;
-   BigNum.sub( bnum1 , temp , bnum1 ) ;
-   return 0 ;
-end
+return BigNum

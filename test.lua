@@ -19,7 +19,8 @@
 
 dofile "test_BigNum.lua"
 dofile "test_BigRat.lua"
-dofile "test_parameter_leak.lua"
+--dofile "test_parameter_leak.lua"
+dofile "test_side_effect.lua"
 dofile "test_div.lua"
 dofile "test_mul.lua"
 dofile "test_sum.lua"

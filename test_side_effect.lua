@@ -18,7 +18,7 @@
 --$.%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 --Tests side effects
-require( "BigNum.lua" ) ;
+local BigNum = require( "BigNum" ) ;
 
 --ADD
 a = BigNum.new( 4364 ) ;

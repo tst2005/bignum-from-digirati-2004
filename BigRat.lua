@@ -24,8 +24,9 @@
 
 --%%%%%%%%        Start of Code        %%%%%%%%--
 
-require( "BigNum.lua" ) ;
+local BigNum = require( "BigNum" ) ;
 
+local BigRat
 BigRat = {} ;
 BigRat.mt = {} ;
 
@@ -486,3 +487,5 @@ function BigRat.compare( bnum1 , bnum2 )
       return 1 ;
    end
 end
+
+return BigRat

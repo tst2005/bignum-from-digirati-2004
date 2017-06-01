@@ -17,7 +17,7 @@
 --
 --$.%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-require( "BigRat.lua" ) ;
+local BigRat = require( "BigRat" ) ;
 
 --Testa new{{{1
 print( "Testing BigRat.mew:" ) ;

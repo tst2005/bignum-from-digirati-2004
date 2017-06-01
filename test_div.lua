@@ -17,7 +17,7 @@
 --
 --$.%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-require("BigNum.lua") ;
+local BigNum = require("BigNum") ;
 
 RADIX = 10 ;
 RADIX_LEN = 1 ;
