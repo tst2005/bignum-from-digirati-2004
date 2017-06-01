@@ -1,7 +1,7 @@
 --%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 --
 --  File Name:              test.lua
---  Package Name:           BigNum 
+--  Package Name:           BigNum
 --
 --  Project:    Big Numbers library for Lua
 --  Mantainers: fmp - Frederico Macedo Pessoa
@@ -24,4 +24,4 @@ dofile "test_side_effect.lua"
 dofile "test_div.lua"
 dofile "test_mul.lua"
 dofile "test_sum.lua"
-dofile "test_sub.lua" 
+dofile "test_sub.lua"
